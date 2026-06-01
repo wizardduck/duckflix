@@ -1,0 +1,129 @@
+.container{
+    width:100%;
+    height:100vh;
+    background:#000;
+    position: relative;
+    overflow:hidden;
+}
+
+/* LOADING */
+
+.loading{
+
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:black;
+    color:white;
+}
+
+/* CAROUSEL */
+
+.carousel{
+    width: 720px;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap:20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:30px;
+    scroll-behavior:smooth;
+    z-index: 30;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.1);
+    box-shadow: 0 10px 40px rgba(0,0,0,.35);
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 8%,
+        black 92%
+        transparent
+    );
+}
+
+/* SCROLLBAR */
+
+.carousel::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.carousel::-webkit-scrollbar-thumb{
+
+    background:#444;
+
+    border-radius:20px;
+}
+
+/* MOVIE CARD */
+
+.card{
+
+    min-width: 200px;
+
+    height:260px;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    flex-shrink:0;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    position:relative;
+}
+
+.card:hover{
+
+    transform:scale(1.03);
+    z-index: 50;
+}
+
+.card img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1100px){
+
+    .hero{
+
+        width:100%;
+
+        height:70vh;
+    }
+
+    .carousel{
+
+        width:100%;
+        bottom: 20px;
+        top: auto;
+        right: 20px;
+        transform: none;
+    }
+
+    .card{
+
+        min-width:180px;
+
+        height:260px;
+    }
+}

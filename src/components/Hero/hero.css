@@ -1,0 +1,123 @@
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.rating{
+    width: 42px;
+    height: 42px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #e50914;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.hero{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    z-index: 1;
+    transition: 1s;
+}
+
+.hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,.92) 25%,
+        rgba(0,0,0,.55) 55%,
+        rgba(0,0,0.9)
+    );
+}
+
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .75);
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,.95,)
+        rgba(0,0,0,.4)
+    );
+}
+
+.content{
+    position: absolute;
+    max-height: 90vh;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+    max-width: 30%;
+    color: #fff;
+    z-index: 20;
+}
+
+.content h1{
+    font-size: 36px;
+    margin-bottom: 20px
+}
+
+.content p{
+    line-height: 1.8;
+    margin-bottom: 28px;
+    color: #ddd;
+}
+
+.content button{
+    padding: 14px 32px;
+    border: none;
+    background: #e50914;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 3s;
+}
+
+.content button:hover{
+    transform: scale(1.05);
+}
+
+@ketframes zoom{
+    from{
+        background-size:100%;
+    }
+
+    to{
+        background-size:110%;
+    }
+}
+
+@media(max-width:1100px){
+
+    .content{
+        
+        width:90%;
+        top: 32%;
+        left:20px;
+    }
+
+    .content h1{
+
+        font-size:30px;
+    }
+
+    .content p{
+        display: none;
+    }
+
+}
