@@ -1,70 +1,147 @@
-# Getting Started with Create React App
+# 🎬 DuckFlix
+![React](https://img.shields.io/badge/React-19-blue)
+![Axios](https://img.shields.io/badge/Axios-HTTP-orange)
+![TMDB](https://img.shields.io/badge/TMDB-API-green)
+![License](https://img.shields.io/badge/license-MIT-yellow)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+DuckFlix is a movie streaming-inspired web application built with React and powered by the TMDB API. Users can browse currently playing movies, search for titles in real time, view detailed information, watch trailers, and manage a personalized favorites list.
 
-### `npm start`
+## 🚀 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎥 Browse currently playing movies
+- 🔍 Real-time movie search with suggestions
+- 📄 Detailed movie information page
+- ▶️ Watch official movie trailers
+- ❤️ Add and remove movies from favorites
+- 💾 Favorites persistence using LocalStorage
+- 🎨 Modern streaming platform-inspired UI
+- 📱 Responsive design
+- 🔄 Automatic movie carousel
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Technologies Used
 
-### `npm test`
+- React
+- React Router DOM
+- Axios
+- CSS3
+- React Icons
+- TMDB API
+- LocalStorage
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Structure
 
-### `npm run build`
+```bash
+src/
+├── components/
+│   ├── Header/
+│   ├── Hero/
+│   └── MovieCard/
+│
+├── pages/
+│   ├── Home/
+│   ├── Movie/
+│   └── Favorites/
+│
+├── services/
+│   └── api.js
+│
+├── routes.js
+└── App.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add screenshots of your application here:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Home Page
 
-### `npm run eject`
+![Home Screenshot](./public/homepage.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Search Box
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Movie Details Screenshot](./public/search.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Movie Details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Movie Details Screenshot](./public/moviedetails.png)
 
-## Learn More
+### Favorites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Favorites Screenshot](./public/favorites.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation
 
-### Code Splitting
+Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/YOUR_USERNAME/duckflix.git
+```
 
-### Analyzing the Bundle Size
+Navigate to the project folder:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd duckflix
+```
 
-### Making a Progressive Web App
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm install
+```
 
-### Advanced Configuration
+Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+## 🔑 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Create a `.env` file in the root directory and add your TMDB API key:
 
-### `npm run build` fails to minify
+```env
+REACT_APP_TMDB_KEY=your_api_key_here
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For Vite projects:
+
+```env
+VITE_TMDB_KEY=your_api_key_here
+```
+
+## 🌐 API Reference
+
+This project uses:
+
+- The Movie Database (TMDB)
+
+Official documentation:
+
+https://developer.themoviedb.org/docs
+
+## 🎯 Future Improvements
+
+- User authentication
+- Dark/Light theme toggle
+- Advanced filtering
+- Pagination
+- Watchlist feature
+- Actor and cast information
+- Movie recommendations
+
+## 👨‍💻 Author
+
+**Breno Castro**
+
+Frontend Developer in training, focused on building modern web applications using React and JavaScript.
+
+## 📫 Contact
+
+- GitHub: https://github.com/wizardduck
+- LinkedIn: https://www.linkedin.com/in/brenocastro7/
+
+---
+
+⭐ If you enjoyed this project, consider giving it a star on GitHub!
